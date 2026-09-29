@@ -1,0 +1,46 @@
+<html> 
+<head> 
+<title>JavaScript String and Math Functions</title> 
+</head> 
+<body>
+<h1>JavaScript String and Math Functions</h1>
+<h2>String Functions</h2>
+<input type="text" id="S" placeholder="Enter a string">
+<button onclick="stringFunctions()">Click for String Operations</button>
+<p id="stringResult"></p>
+<h2>Math Functions</h2>
+<input type="number" id="userNumber" placeholder="Enter a number">
+<button onclick="mathFunctions()">Click for Math Operations</button>
+<p id="mathResult"></p>
+<script>
+function stringFunctions()
+{
+let name = document.getElementById("S").value;
+let upper = name.toUpperCase();
+let lower = name.toLowerCase();
+let length = name.length;
+document.getElementById("S").innerHTML =
+"Original: " + name + "<br>" +
+"Uppercase: " + upper + "<br>" +
+"Lowercase: " + lower + "<br>" +
+"Length: " + length;
+}
+
+function mathFunctions()
+{
+let number = document.getElementById("userNumber").value;
+number = Number(number);
+let rounded = Math.round(number);
+let floor = Math.floor(number);
+let ceil = Math.ceil(number);
+let squareRoot = Math.sqrt(number);
+document.getElementById("mathResult").innerHTML =
+"Number: " + number + "<br>" +
+"Round: " + rounded + "<br>" +
+"Floor: " + floor + "<br>" +
+"Ceil: " + ceil + "<br>" +
+"Square Root: " + squareRoot;
+}
+</script>
+</body>
+</html>

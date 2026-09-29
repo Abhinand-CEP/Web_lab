@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body>
+<h2>Registration Form</h2>
+<form id="registrationForm">
+Name:
+<input type="text" id="name">
+<br><br>
+Email:
+<input type="text" id="email">
+<br><br>
+Password:
+<input type="password" id="pass">
+<br><br>
+ Confirm Password:
+<input type="password" id="cnfrmPass">
+<button type="submit">Register</button>
+</form>
+<script>
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+event.preventDefault();
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let password = document.getElementById("pass").value;
+let confirmPassword = document.getElementById("cnfrmPass").value;
+
+if (name === "") {
+alert("Please enter your name");
+return;
+}
+if (email === "") {
+ alert("Please enter your email");
+return;
+}
+if (password.length < 6) {
+alert("Password must be at least 6 characters");
+ return;
+}
+if (password !== confirmPassword) {
+alert("Passwords do not match");
+return;
+}
+alert("Registration successful!");
+document.getElementById("registrationForm").reset();
+});
+});
+</script>
+</body>
+</html>
+
