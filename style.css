@@ -1,0 +1,19 @@
+h1{
+color: red;
+text-align: center;
+}
+h2{
+color: blue;
+text-align: left;
+}
+.bold {
+font-weight: bold;
+}
+.italic {
+font-style: italic;
+}
+li{
+color: green;
+font-size: 18px;
+}
+

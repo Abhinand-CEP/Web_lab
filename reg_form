@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body style="margin:0; min-height:100vh; background: url('gow1.jpg') center/cover no-repeat;">
+<h1 style="color:red;">User Registration</h1>
+<form style="color:white; font-size:22px;">
+<label for="name">Username:</label>
+<input type="text" id="name" name="name" style="width:300px; height:40px; font-size:20px; padding:5px; border-radius:6px; border:2px solid red;" required>
+<br><br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" style="width:300px; height:40px; font-size:20px; padding:5px; border-radius:6px; border:2px solid red;" required>
+<br><br>
+<button type="submit" style="width:160px; height:50px; font-size:20px; font-weight:bold; background-color:red; color:white; border:2px solid white; border-radius:8px; cursor:pointer;">Register</button>
+</form>
+</body>
+</html>
+
